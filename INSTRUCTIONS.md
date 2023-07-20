@@ -26,4 +26,31 @@ npx shadcn-ui@latest add button
 
 # Folder Setup
 
+...
 
+# Clerk Authentication
+
+www.clerk.com
+Sign in for free account
+Dashboard - Add application
+Application name: ai-saas
+
+- Provider: Google, Email
+- Create application
+- copy environment variables
+- add to .env
+- Continue in docs
+
+npm install @clerk/nextjs
+
+add to .env
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+
+.change app name in clerk dashboard
+www.clerk.com - dashboard
+
+- customization - branding
+- application name: "Genius" - apply changes
