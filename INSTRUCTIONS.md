@@ -23,3 +23,7 @@ npx shadcn-ui@latest init
 npm i @trivago/prettier-plugin-sort-imports
 
 npx shadcn-ui@latest add button
+
+# Folder Setup
+
+
