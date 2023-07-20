@@ -54,3 +54,7 @@ www.clerk.com - dashboard
 
 - customization - branding
 - application name: "Genius" - apply changes
+
+# Sidebar
+
+npx shadcn-ui@latest add sheet
