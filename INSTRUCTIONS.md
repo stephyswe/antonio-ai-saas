@@ -58,3 +58,8 @@ www.clerk.com - dashboard
 # Sidebar
 
 npx shadcn-ui@latest add sheet
+
+# Dashboard
+
+npx shadcn-ui@latest add card
+
