@@ -63,3 +63,29 @@ npx shadcn-ui@latest add sheet
 
 npx shadcn-ui@latest add card
 
+# Conversation AI UI
+
+npx shadcn-ui@latest add form
+npx shadcn-ui@latest add input
+
+Get OpenAI Key
+https://openai.com/ - Login - API
+Menu - View API Keys - Create New secret key - project name - copy key to .env
+OPENAI_API_KEY=key
+
+"""
+Check usage
+Menu - Manage Account
+- Usage
+
+Add Payment
+Billing - Payment Methods - Add Payment Method
+
+Set Payment Limit
+Billing - Usage Limits - Hard Limit/Soft Limit ($10)
+"""
+
+npm i openai
+npm i axois
+
+npx shadcn-ui@latest add avatar
