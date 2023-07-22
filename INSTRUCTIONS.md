@@ -89,3 +89,7 @@ npm i openai
 npm i axois
 
 npx shadcn-ui@latest add avatar
+
+# Code Generation AI (Open AI)
+
+npm i react-markdown
