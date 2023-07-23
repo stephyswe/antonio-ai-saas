@@ -111,3 +111,33 @@ One variant: https://replicate.com/riffusion/riffusion
 """
 
 npm i replicate
+
+# API Limit
+
+npm i -D prisma
+npx prisma init
+
+Setup Planetscale db
+"""
+- Create Account - Create DB - Click "Ready to connect" -
+- Create Password - Choose "Prisma - copy & replace to .env
+- DATABASE_URL=
+"""
+modify prisma/schema.prisma
+```js
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+```
+npm i @prisma/client
+- add UserApiLimit to schema.prisma
+npx prisma db push
+npx prisma generate
+"""
+npx prisma studio
+"""
