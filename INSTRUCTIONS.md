@@ -93,3 +93,7 @@ npx shadcn-ui@latest add avatar
 # Code Generation AI (Open AI)
 
 npm i react-markdown
+
+# Image Generation AI (Open AI)
+
+npx shadcn-ui@latest add select
