@@ -97,3 +97,17 @@ npm i react-markdown
 # Image Generation AI (Open AI)
 
 npx shadcn-ui@latest add select
+
+# Music Generation AI (Replicate AI)
+
+www.replicate.com - Sign in with Github
+- Enter credit card - Setup Billing - Enter credit card (yelp!)
+- API tokens - Copy token to .env
+
+"""
+Spend limit: - Billing - Spend limit - $10
+Explore other AI models: www.replicate.com/explore
+One variant: https://replicate.com/riffusion/riffusion
+"""
+
+npm i replicate
