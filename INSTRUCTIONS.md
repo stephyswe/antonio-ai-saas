@@ -141,3 +141,7 @@ npx prisma generate
 """
 npx prisma studio
 """
+
+# API Limit UI Counter
+
+npx shadcn-ui@latest add progress
