@@ -203,3 +203,44 @@ npm i crisp-sdk-web
 # Landing Page
 
 npm i typewriter-effect
+
+# Deployment & Wrap Up
+
+// package.json
+ "postinstall": "prisma generate",
+
+ npm run lint
+
+* create new repo in github - ai-saas-tutorial - create repository
+- copy from - use push an existing repository from the command line
+git add .
+git commit -m "first commit"
+- paste in terminal and run
+- repo is created
+
+* add repo to vercel dashboard
+  - visit https://vercel.com/dashboard
+  - add new project - import git repository - add all env variables - click deploy
+  - wait for deployment to finish
+
+
+* change STRIPE_WEBHOOK_SECRET
+-  copy url with ".app"
+- visit stripe.com - webhooks -add endpoint
+- add [url]/api/webhook
+- add events - checkout.session.completed, invoice.payment_succeeded
+- click "add events"
+- click "add endpoint"
+- click "reveal" on signing secret - copy to STRIPE_WEBHOOK_SECRET in vercel app
+
+* change NEXT_PUBLIC_APP_URL
+-  copy url with ".app"
+-  paste to NEXT_PUBLIC_APP_URL in vercel app
+
+* redeploy in deployments tab
+
+* reset database in terminal
+npx prisma migrate reset
+npx prisma db push
+
+# Last Tip: AI generation might time out. Maybe add a fix.
