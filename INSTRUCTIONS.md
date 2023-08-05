@@ -1,3 +1,11 @@
+## TIP: Prisma
+"""
+npx prisma migrate reset (Clear database)
+then
+npx prisma generate
+npx prisma db push
+"""
+
 # Environment Setup
 
 npx create-next-app@latest ai-saas --typescript --tailwind --eslint
@@ -152,3 +160,31 @@ npm i zustand
 
 npx shadcn-ui@latest add dialog
 npx shadcn-ui@latest add badge
+
+# Stripe Integration
+
+make account at stripe.com
+- copy secret key to .env
+
+npm i stripe
+
+- add UserSubscription in prisma.schema
+
+npx prisma generate
+npx prisma db push
+
+* create STRIPE_WEBHOOK_SECRET in .env
+- visit stripe.com - webhooks - test in local environment
+- add stripe CLI to Path (windows)
+"""
+stripe login
+- click link - allow access
+stripe listen --forward-to localhost:3000/api/webhook
+- copy webhook secret to STRIPE_WEBHOOK_SECRET in .env
+- keep terminal online
+"""
+
+* BILLING_ERROR on click "manage subscription" in settings page
+- visit "https://dashboard.stripe.com/test/settings/billing/portal" - activate test link
+- retry "manage subscription" in settings page
+- show billing portal in stripe
