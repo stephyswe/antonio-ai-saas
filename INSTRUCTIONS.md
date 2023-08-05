@@ -188,3 +188,15 @@ stripe listen --forward-to localhost:3000/api/webhook
 - visit "https://dashboard.stripe.com/test/settings/billing/portal" - activate test link
 - retry "manage subscription" in settings page
 - show billing portal in stripe
+
+# Error Handling & Customer Support (Crisp)
+
+npm i react-hot-toast
+
+* add crisp customer bot
+- visit https://crisp.chat/en/ - get started - enter login credentials - copy window.CRISP_WEBSITE_ID in "Success" step.
+- paste in components/crisp-chat.tsx
+npm i crisp-sdk-web
+- after add crisp provider in layout - in web click "Discover my dashboard"
+- write message in crisp-chat - validate message show in crisp dashboard
+
