@@ -200,3 +200,6 @@ npm i crisp-sdk-web
 - after add crisp provider in layout - in web click "Discover my dashboard"
 - write message in crisp-chat - validate message show in crisp dashboard
 
+# Landing Page
+
+npm i typewriter-effect
