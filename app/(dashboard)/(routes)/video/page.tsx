@@ -16,11 +16,7 @@ import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useProModal } from "@/hooks/use-pro-modal";
 
-const formSchema = z.object({
-  prompt: z.string().min(1, {
-    message: "Prompt is required.",
-  }),
-});
+import { formSchema } from "./constants";
 
 const VideoPage = () => {
   const router = useRouter();

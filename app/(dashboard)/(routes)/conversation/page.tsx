@@ -20,11 +20,7 @@ import { UserAvatar } from "@/components/user-avatar";
 import { useProModal } from "@/hooks/use-pro-modal";
 import { cn } from "@/lib/utils";
 
-const formSchema = z.object({
-  prompt: z.string().min(1, {
-    message: "Prompt is required.",
-  }),
-});
+import { formSchema } from "./constants";
 
 const ConversationPage = () => {
   const router = useRouter();
